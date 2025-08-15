@@ -1,0 +1,156 @@
+body{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+header{
+    background-image: url(Glossário.png);
+    height: 500px;
+    width: 1905px;
+}
+
+.accordion-container {
+    max-width: 1090px;
+    margin: 50px auto;
+    border: 1px solid #00000000;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.accordion-header {
+    background-color: rgb(97, 97, 97);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 35px;
+    width: 1100px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #00000044;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header:hover {
+    background-color: rgb(180, 178, 178);
+}
+
+.accordion-content {
+    background-color: #a8a8a8;
+    padding: 10 -10000px;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, padding 0.3s ease-out;
+    width: 1020px;
+    border-radius: 8px;
+}
+
+.accordion-content.active {
+    max-height: 200px; 
+    padding: 40px;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.top-buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 40px;
+    font-size: 22px;
+    font-family: serif;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.top-buttons button:hover {
+    background-color: #666;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.top-buttons #btn-home {
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 40px;
+    font-size: 22px;
+    font-family: serif;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(78, 91, 104, 0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.top-buttons #btn-home:hover {
+    background-color: #a1a1a1;
+    transform: translateY(-3px) scale(1.08);
+}
+
+.top-buttons .top-link-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 40px;
+    font-size: 22px;
+    font-family: serif;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.top-buttons .top-link-button:hover {
+    background-color: #666;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.grupo-cards{
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha */   
+    justify-content: center; /* centraliza */
+    gap: 50px; /* espaçamento entre cards */
+    max-width: calc(5 * 300px + 4 * 10px); /* largura de 5 cards + espaçamento */
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: rgb(74, 74, 75);
+    color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+.card img{
+    width: 300px;
+    border-radius: 5px;
+    height: 200px;
+}
+footer{
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
