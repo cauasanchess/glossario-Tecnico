@@ -6,4 +6,3 @@ accordionHeaders.forEach(header => {
         accordionContent.classList.toggle('active');
     });
 });
-
